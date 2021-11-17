@@ -1,0 +1,108 @@
+﻿<Window x:Class="CG_TrialReset.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CG_TrialReset"
+        xmlns:fw="clr-namespace:SourceChord.FluentWPF;assembly=FluentWPF"
+        mc:Ignorable="d"
+        Title="CyberGhost Trial Reset" Height="400" Width="280" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="{DynamicResource SystemChromeBlackMediumLowColorBrush}"
+        fw:AcrylicWindow.Enabled="True" fw:AcrylicWindow.AcrylicWindowStyle="Normal" Icon="source/zap.png">
+    
+    <Grid fw:PointerTracker.Enabled="True" Background="#01FFFFFF">
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <MediaElement x:Name="mediaElement" Grid.Row="1" Source="source/video/1.mp4" LoadedBehavior="Manual"  Stretch="None" Opacity="0.4" MediaEnded="mediaElement_MediaEnded"/>
+
+        <Image Source="source/bg_img.png" Width="200" Height="200" Opacity="0.15" Margin="-60,-8,140,0"/>
+
+        <StackPanel Grid.Row="0">
+            <TextBlock Margin="15,15,15,5"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
+                   Text="Trial reset for CyberGhost"
+                   TextWrapping="Wrap"
+                   FontSize="18"
+                   FontFamily="HelveticaNeueCyr Roman"/>
+            <TextBlock Margin="2"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
+                   Text="Authors:"
+                   TextWrapping="Wrap"
+                   FontFamily="HelveticaNeueCyr Light"/>
+            <TextBlock Margin="0"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
+                   Text="GFOXSH - Scripter"
+                   TextWrapping="Wrap"
+                   FontFamily="HelveticaNeueCyr Light"/>
+            <TextBlock Margin="0"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
+                   Text="Meepure - Designer"
+                   TextWrapping="Wrap"
+                   FontFamily="HelveticaNeueCyr Light"/>
+
+            <Button Content="Start" Width="100" Margin="35,20,35,15"
+                Style="{StaticResource ButtonRoundAccentRevealStyle}" Height="35" Click="Button_Click" Foreground="#e5e5e5" FontFamily="HelveticaNeueCyr Roman"/>
+
+            <TextBlock x:Name="ProgramStateLabel" Margin="0"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
+                   FontSize="11"
+                   Text="Log out in CyberGhost before continue" Foreground="Gray"
+                   FontFamily="HelveticaNeueCyr Normal"
+                   TextWrapping="Wrap"/>
+
+        </StackPanel>
+
+        <Rectangle Grid.Row="1" Width="300" Fill="#e5e5e5" Opacity="0.2"/>
+
+        <Ellipse Grid.Row="1" Width="100" Height="100" Margin="20"
+                   HorizontalAlignment="left" Stroke="White" StrokeThickness="1">
+            <Ellipse.Fill>
+                <ImageBrush x:Name="userAccountImage"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Image x:Name="Vk_social" Grid.Row="1" Opacity="0.5" Margin="136,0,92,0" Height="56" VerticalAlignment="Center" MouseDown="Vk_social_MouseDown">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+            <Image.Style>
+                <Style TargetType="{x:Type Image}">
+                    <Setter Property="Source" Value="source/social/lzt_logo.png"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding IsMouseOver, ElementName=Vk_social}"
+                                         Value="True">
+                            <Setter Property="Source" Value="source/social/lzt_logo_hover.png"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Image.Style>
+        </Image>
+
+        <Image x:Name="Qiwi_social" Grid.Row="1" Opacity="0.5" Margin="206,0,22,0" Height="56" VerticalAlignment="Center" MouseDown="Qiwi_social_MouseDown" >
+            <Image.Style>
+                <Style TargetType="{x:Type Image}">
+                    <Setter Property="Source" Value="Source/social/qiwi_icon.png"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding IsMouseOver, ElementName=Qiwi_social}"
+                                         Value="True">
+                            <Setter Property="Source" Value="source/social/qiwi_icon_hover.png"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Image.Style>
+        </Image>
+
+    </Grid>
+</Window>

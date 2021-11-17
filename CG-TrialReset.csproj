@@ -1,0 +1,108 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>CG_TrialReset</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>app_icon.ico</ApplicationIcon>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageId>CyberGhost VPN Trial Reset</PackageId>
+    <Version>1.13.3</Version>
+    <Authors>Meepure Systems</Authors>
+    <Description>Set VPN free</Description>
+    <Product>CG TR</Product>
+    <Copyright>Meepure Systems @ Tandem Studio</Copyright>
+    <PackageProjectUrl>lolz.guru</PackageProjectUrl>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyName>CGTR</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="source\bg_img.png" />
+    <None Remove="source\hash.png" />
+    <None Remove="source\place.png" />
+    <None Remove="source\resource.exe" />
+    <None Remove="source\social\lzt_logo.png" />
+    <None Remove="source\social\lzt_logo_hover.png" />
+    <None Remove="source\social\qiwi_icon.png" />
+    <None Remove="source\social\qiwi_icon_hover.png" />
+    <None Remove="source\social\vk_logo_clicked.png" />
+    <None Remove="source\social\vk_logo_hover.png" />
+    <None Remove="source\social\vk_logo_idle.png" />
+    <None Remove="source\ui_effects\effect_1.jpg" />
+    <None Remove="source\zap.png" />
+    <None Remove="temp\resource.exe" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="source\resource.exe" />
+    <Resource Include="temp\resource.exe" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentWPF" Version="0.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="source\bg_img.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="source\hash.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="source\icon.png" />
+    <Resource Include="source\place.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="source\social\lzt_logo.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="source\social\lzt_logo_hover.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="source\social\qiwi_icon.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="source\social\qiwi_icon_hover.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="source\social\vk_logo_clicked.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="source\social\vk_logo_hover.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="source\social\vk_logo_idle.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="source\ui_effects\effect_1.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="source\zap.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="source\video\1.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
