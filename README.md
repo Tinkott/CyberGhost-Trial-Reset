@@ -3,6 +3,8 @@
 
 ![Без имени-1](https://user-images.githubusercontent.com/38760591/142048472-89000d11-99f5-4c1a-8c04-cc4a9789ac52.png)
 
+______
+
 # CyberghostVPN Trial Reset [CGTR]
 ### EN: Use CyberGhost for weeks, months, years for free!
 
@@ -11,13 +13,15 @@ Like Cyberghost but don't like the price?
 CGTR will solve your problem!
 Use a simple loader and create as many accounts as you want with a free trial
 
-Features:
+## **Features**
+```
 - Fluent design
 - Windows 10/11 support
 - Half open source loader
 - No limits
-
-Guide:
+```
+## **Guide**
+```
 1. Log out from CyberghostVPN account
 2. Close CyberghostVPN from tray
 3. Start CGTR.exe
@@ -26,6 +30,8 @@ Guide:
 6. Start CyberghostVPN again
 7. Create new account on temp mail
 8. Done!
+```
+_______
 
 ### RU: Используйте CyberGhost в течение недель, месяцев, лет бесплатно!
 
@@ -34,13 +40,15 @@ Guide:
 CGTR решит вашу проблему!
 Используйте простой загрузчик и создайте столько учетных записей с бесплатной пробной версией сколько захотите.
 
-Особенности:
+## **Особенности**
+```
 - Дизайн Fluent
 - Поддержка Windows 10/11
 - Загрузчик с наполовину открытым исходным кодом
 - Никаких ограничений
-
-Руководство:
+```
+## **Руководство**
+```
 1. Выйдите из учетной записи CyberghostVPN
 2. Закройте CyberghostVPN из системного трея
 3. Зупустите CGTR.exe
@@ -49,7 +57,7 @@ CGTR решит вашу проблему!
 6. Снова запустите CyberghostVPN
 7. Создайте новую учетную запись на временной почте
 8. Готово!
-
+```
 
 ### [Download](https://github.com/Tinkott/CyberGhost-Trial-Reset/files/7554048/CGTR_win.zip) \ [Скачать](https://github.com/Tinkott/CyberGhost-Trial-Reset/files/7554048/CGTR_win.zip) CyberghostVPNTR
 ![CyberGhost-VPN-full](https://user-images.githubusercontent.com/38760591/142192451-041d9a12-3683-45df-af55-f75c97ce7669.jpg)
