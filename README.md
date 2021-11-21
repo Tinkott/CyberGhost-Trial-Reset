@@ -59,5 +59,6 @@ CGTR решит вашу проблему!
 8. Готово!
 ```
 
+Supported CG VPN version: [Download](https://www.cyberghostvpn.com/en_US/vpn-free-trial)
 ### [Download](https://github.com/Tinkott/CyberGhost-Trial-Reset/files/7554048/CGTR_win.zip) \ [Скачать](https://github.com/Tinkott/CyberGhost-Trial-Reset/files/7554048/CGTR_win.zip) CyberghostVPNTR
 ![CyberGhost-VPN-full](https://user-images.githubusercontent.com/38760591/142192451-041d9a12-3683-45df-af55-f75c97ce7669.jpg)
